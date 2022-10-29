@@ -1,1 +1,10 @@
-<p>navbar works!</p>
+<input type="checkbox" id="active">
+<label for="active" class="menu-btn"><span></span></label>
+<label for="active" class="close"></label>
+<div class="wrapper">
+    <ul>
+        <li><a routerLink="" onclick="document.getElementById('active').checked = false;">Home</a></li>
+        <li><a routerLink="excursion" onclick="document.getElementById('active').checked = false;">Excursion</a></li>
+        <li><a routerLink="about" onclick="document.getElementById('active').checked = false;">About</a></li>
+    </ul>
+</div>
