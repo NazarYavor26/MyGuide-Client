@@ -9,6 +9,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { ExcursionComponent } from './pages/excursion/excursion.component';
 import { AboutComponent } from './pages/about/about.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,9 @@ import { AboutComponent } from './pages/about/about.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
